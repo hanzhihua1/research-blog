@@ -1,13 +1,15 @@
 ---
 title: Differential Geometry
-slug: differential-geometry
+date: '2020-02-02T22:40:32.169Z'
+template: 'post'
 draft: false
-date: 2020-02-03T06:49:11.427Z
-description: An intro to differential geometry.
-category: math
+slug: 'differential-geometry'
+category: 'Math'
 tags:
-  - math
+  - 'Math'
+description: 'Differential geometry 1'
 ---
+
 ## 1. Differential geometry
 
 A **differentiable manifold** is a set $S$ with a coordinate system. The elements of $S$ are called **points**.
@@ -16,9 +18,9 @@ $S$ must also have a **coordinate system**. A coordinate system is a one to one 
 
 $n$ is called the **dimension** of $S$, and write $n = \text{dim }S$.
 
-![coordinate](https://cdn.mathpix.com/snip/images/YkivCUuLsNhXM7qGYv0-MjBCl_11ZlagxUNZodeRuX8.original.fullsize.png "coordinate")
+![coordinate](https://cdn.mathpix.com/snip/images/YkivCUuLsNhXM7qGYv0-MjBCl_11ZlagxUNZodeRuX8.original.fullsize.png 'coordinate')
 
-The coordinate system may not be valid everywhere, that is, there are not global. For example, it is impossible to map the surface of the sphere into flat euclidean space. 
+The coordinate system may not be valid everywhere, that is, there are not global. For example, it is impossible to map the surface of the sphere into flat euclidean space.
 
 We can view these the following way: Consider an open subset $U$ of $S$ and suppose $U$ has a coordinate system. This is a local coordinate system for points in $U$. For points not in $U$, we consider an open subset $V$, which also has another coordinate system. Repeat this process until $S$ is covered.
 
@@ -28,9 +30,9 @@ Each $\xi^i : S \to \R^n$ is called the **coordinate functions**.
 
 Note: we use $\xi^i, \rho^i$ to denote both the variable and the function, like how we write $y = y(x)$.
 
-Now, suppose we had another coordinate system $\psi = \[\rho^i]$ for $S$. Then the point $p \in S$ has both the coordinates $\[\xi^i(p)] = \[\xi^i] \in \R^n$, and  $\left\[\rho^{i}(p)\right]=\left\[\rho^{i}\right] \in \mathbb{R}^{n}$. We can obtain the coordinates $\[\rho^i]$ from $\[\xi^i]$ in the following way:
+Now, suppose we had another coordinate system $\psi = \[\rho^i]$ for $S$. Then the point $p \in S$ has both the coordinates $\[\xi^i(p)] = \[\xi^i] \in \R^n$, and $\left\[\rho^{i}(p)\right]=\left\[\rho^{i}\right] \in \mathbb{R}^{n}$. We can obtain the coordinates $\[\rho^i]$ from $\[\xi^i]$ in the following way:
 
-First apply the inverse mapping $\varphi^{-1}$ to $\[\xi^i]$. This is a point $p \in S$. Then apply $\psi$. The result is $\[\rho^i]$. 
+First apply the inverse mapping $\varphi^{-1}$ to $\[\xi^i]$. This is a point $p \in S$. Then apply $\psi$. The result is $\[\rho^i]$.
 
 ![](https://cdn.mathpix.com/snip/images/w69fTMZ2qKk16_2V_IzGrf9kvutRKHjybfXP8m42fRI.original.fullsize.png)
 
@@ -38,7 +40,7 @@ The result is: $$\psi \circ \varphi^{-1}:\left\[\xi^{1}, \cdots, \xi^{n}\right] 
 
 This is the coordinate transformation from $\varphi=\left\[\xi^{i}\right]$ to $\psi=\left\[\rho^{i}\right]$.
 
-On manifolds, we care about properties of $S$ that are *invariant under coordinate transformations.* Differential geometry analyzes the geometry of objects using differential operators with respect to a variety of functions on $S$. 
+On manifolds, we care about properties of $S$ that are _invariant under coordinate transformations._ Differential geometry analyzes the geometry of objects using differential operators with respect to a variety of functions on $S$.
 
 This gives rise to the following definition:
 
@@ -52,9 +54,9 @@ And of course, by **diffeomorphism** we mean that $\psi \circ \varphi^{-1}$ and 
 
 The class of $C^\infty$ functions on $S$ is $\mathcal{F}$. For all $f$ and $g$ in $\mathcal{F}$,we have:
 
-* The sum $(f+g)(p) = f(p) + g(p)$
-* The scaling $(cf)(p) = cf(p)$
-* The product $(fg)(p) = f(p) g(p)$ These members are also in $\mathcal{F}$.
+- The sum $(f+g)(p) = f(p) + g(p)$
+- The scaling $(cf)(p) = cf(p)$
+- The product $(fg)(p) = f(p) g(p)$ These members are also in $\mathcal{F}$.
 
 Let $\[\xi^i]$ and $\[\rho^i]$ be two coordinate systems. Thus $$\sum*{j=1}^{n} \frac{\partial \xi^{i}}{\partial \rho^{j}} \frac{\partial \rho^{j}}{\partial \xi^{k}}=\sum*{j=1}^{n} \frac{\partial \rho^{i}}{\partial \xi^{j}} \frac{\partial \xi^{j}}{\partial \rho^{k}}=\delta_{k}^{i}$$ by the chain rule.
 
@@ -68,6 +70,6 @@ $$\begin{aligned} & \frac{\partial \xi^{i}}{\partial \rho^{j}} \frac{\partial \r
 
 ## 1.2 Tangent Spaces
 
-The tangent space $T_p$ at a point $p$ is the vector space obtained by locally linearlizing $S$ around $p$. 
+The tangent space $T_p$ at a point $p$ is the vector space obtained by locally linearlizing $S$ around $p$.
 
 ## 1.6 Affine Connections
