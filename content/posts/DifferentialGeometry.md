@@ -7,7 +7,7 @@ slug: 'differential-geometry'
 category: 'Math'
 tags:
   - 'Math'
-description: 'Differential geometry 1'
+description: 'Information geometry part 1'
 ---
 
 ## 1. Differential geometry
