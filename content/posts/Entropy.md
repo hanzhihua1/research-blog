@@ -13,19 +13,19 @@ socialImage: '/media/image-3.jpg'
 
 # 0. Entropy in physics and machine learning
 
-The goal of information theory is to achieve one thing: to quantify the amount of information contained in a random variable.
+The goal of information theory is to achieve one thing: to quantify the amount of information contained in a random variable. 
 
 ## Random variables
 
-What is a variable? A variable is simply a number in a box. $x = 5$ means that inside the box $x$, we have the number 5.
+What is a variable? A variable is simply a number in a box. $x = 5$ means that inside the box $x$, we have the number 5. 
 
 **A random variable is a variable that has it's value drawn according to some probability distribution.**
 
-Unlike variables, you can't just open the what the box is because you don't know what's inside. It's _random_.
+Unlike variables, you can't just open the what the box is because you don't know what's inside. It's *random*.  
 
-That is, imagine a computer drawing a random number from a probability distribution and assigning it to $x$. The variable $X$ is then assigned some number $x$. The chance that $X = x$ is given by some probability $p(x)$, or $p(X = x)$. So really, specifying a distribution defines a random variable, and vice versa.
+That is, imagine a computer drawing a random number from a probability distribution and assigning it to $x$. The variable $X$ is then assigned some number $x$. The chance that $X = x$ is given by some probability $p(x)$, or $p(X = x)$. So really, specifying a distribution defines a random variable, and vice versa. 
 
-Again. We can never know what $X$ is. We can always know the probability of $X = x$, but the closest thing we can write is that
+Again. We can never know what $X$ is. We can always know the probability of $X = x$, but the closest thing we can write is that 
 
 $$
 X \sim p(x | \theta)
@@ -33,7 +33,7 @@ $$
 
 If we know $X$ is from some family of distributions, then knowing the all the parameters $\theta$ also tells us what $X$ is.
 
-In the notes, we will use random variables and probability distribution interchangably.
+In the notes, we will use random variables and probability distribution interchangably. 
 
 ## The definition of entropy
 
@@ -69,9 +69,10 @@ $$
 
 which is usually referred to as information content. Information content roughly measures the suprisal of seeing some value $X = x$, since we are more suprised the smaller $p(x)$ is. The log is there to make sure entropy has some nice properties. (additivity, non-negativity)
 
+
 ## Joint and Conditional entropy
 
-The joint entropy is for two random variables, and is defined as
+The joint entropy is for two random variables, and is defined as 
 
 $$
 H(X, Y)=-\sum_{x \in \mathcal{X}} \sum_{y \in \mathcal{Y}} p(x, y) \log p(x, y)
@@ -95,7 +96,6 @@ H(Y | X) &=\sum_{x \in \mathscr{X}} p(x) H(Y | X=x) \\
 $$
 
 Chain rule:
-
 $$
 H(X, Y)=H(X)+H(Y | X)
 $$
@@ -103,7 +103,7 @@ $$
 In general, entropy acts like a measure on the sample space where random variables live. Here is a quick diagram.
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Entropy-mutual-information-relative-entropy-relation-diagram.svg/2560px-Entropy-mutual-information-relative-entropy-relation-diagram.svg.png)
 
-## Relative Entropy
+## Relative Entropy 
 
 Let $X$ be a random variable with distribution $p(x)$. Suppose that we wished to approximate $X$ with another distribution $q(x)$. How many bits of information might we lose?
 
@@ -118,11 +118,11 @@ $$
 which for clarity, has the notation $H_q(p)$. Now, we only need to take the expected true information content and subtract the two:
 
 $$
-D(p || q) = H_q(p) - H(p) = \sum_x p(x) [\log(q(x) - \log(p(x))]
-$$
+D(p || q) = H_q(p) - H(p) 
+$$ 
 
 $$
-D(p || q) = -\sum_x p(x) \log\left(\frac{q(x)}{p(x)}\right)
+D(p || q) = \sum_x p(x) [\log(q(x) - \log(p(x))]
 $$
 
 which known as the KL divergence. I like to read this as entropy difference $D(p || q)$ of replacing $p$ by $q$.
@@ -137,7 +137,7 @@ Note that the variable $x$ is essentially a dummy variable. In fact, for all def
 
 What is the relation between information and entropy? Why do we care?
 
-The reason has to do with [https://en.wikipedia.org/wiki/Landauer%27s_principle](https://en.wikipedia.org/wiki/Landauer%27s_principle).
+The reason has to do with [https://en.wikipedia.org/wiki/Landauer%27s_principle](https://en.wikipedia.org/wiki/Landauer%27s_principle). 
 
 [https://en.wikipedia.org/wiki/Entropy_in_thermodynamics_and_information_theory#Szilard's_engine](https://en.wikipedia.org/wiki/Entropy_in_thermodynamics_and_information_theory#Szilard's_engine)
 
