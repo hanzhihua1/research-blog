@@ -139,7 +139,7 @@ What is the relation between information and entropy? Why do we care?
 
 The reason has to do with [https://en.wikipedia.org/wiki/Landauer%27s_principle](https://en.wikipedia.org/wiki/Landauer%27s_principle). 
 
-[https://en.wikipedia.org/wiki/Entropy_in_thermodynamics_and_information_theory#Szilard's_engine](https://en.wikipedia.org/wiki/Entropy_in_thermodynamics_and_information_theory#Szilard's_engine)
+[Szilard's_engine](https://en.wikipedia.org/wiki/Entropy_in_thermodynamics_and_information_theory#Szilard's_engine)
 
 You can prove using Szilard's engine that, a Maxwell's demon would not violate the Second Law of Thermodynamics since, for the demon to lift the gates, he must increase the entropy in his brain. Erasing the information in his brain, would cause the entropy of the environment to increase.
 
