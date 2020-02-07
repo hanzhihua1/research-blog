@@ -1,13 +1,13 @@
 ---
 title: Differential Geometry
-date: '2020-02-02T22:40:32.169Z'
-template: 'post'
+date: "2020-02-02T22:40:32.169Z"
+template: "post"
 draft: false
-slug: 'differential-geometry'
-category: 'Math'
+slug: "differential-geometry"
+category: "Information Geometry"
 tags:
-  - 'Math'
-description: 'Information geometry part 1'
+  - "Information Geometry"
+description: "Information Geometry Part 1"
 ---
 
 ## 1. Differential geometry
@@ -18,7 +18,7 @@ $S$ must also have a **coordinate system**. A coordinate system is a one to one 
 
 $n$ is called the **dimension** of $S$, and write $n = \text{dim }S$.
 
-![coordinate](https://cdn.mathpix.com/snip/images/YkivCUuLsNhXM7qGYv0-MjBCl_11ZlagxUNZodeRuX8.original.fullsize.png 'coordinate')
+![coordinate](https://cdn.mathpix.com/snip/images/YkivCUuLsNhXM7qGYv0-MjBCl_11ZlagxUNZodeRuX8.original.fullsize.png "coordinate")
 
 The coordinate system may not be valid everywhere, that is, there are not global. For example, it is impossible to map the surface of the sphere into flat euclidean space.
 
